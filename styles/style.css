@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --tomato: hsl(4, 100%, 67%);
+  --orange: hsl(24, 100%, 63%);
+  --dark-slate-grey: hsl(234, 29%, 20%);
+  --charcoal-grey: hsl(235, 18%, 26%);
+  --grey: hsl(231, 7%, 60%);
+  --white: hsl(0, 0%, 100%);
+  --font: "Roboto", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: var(--font);
+  background-color: var(--charcoal-grey);
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  background-color: var(--white);
+}
+
+form {
+  padding: 1.5rem;
+}
+
+form h1 {
+  color: var(--dark-slate-grey);
+  font-size: 2.5rem;
+  margin-bottom: 1.25rem;
+}
+
+form p {
+  color: var(--dark-slate-grey);
+  margin-bottom: 1.5rem;
+}
+
+.infos {
+  margin-bottom: 1.5rem;
+}
+
+.info {
+  display: flex;
+  gap: 1rem;
+}
+
+.info p {
+  margin-bottom: 0.75rem;
+}
+
+.email {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.label-email {
+  display: flex;
+  justify-content: space-between;
+}
+
+.email label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-bottom: .25rem;
+}
+
+.input-email {
+  padding: 1rem;
+  border: 1px solid var(--grey);
+  margin-bottom: 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: .4s ease;
+}
+
+.input-email:hover {
+  border: 1px solid var(--charcoal-grey);
+}
+
+.input-email.error::placeholder {
+  color: var(--tomato);
+}
+
+.email input::placeholder {
+  color: var(--grey);
+  font-size: 1rem;
+}
+
+small {
+  display: none;
+  color: var(--tomato);
+  font-weight: 700;
+}
+
+.submit-btn {
+  height: 3.5rem;
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  background-color: var(--dark-slate-grey);
+  color: var(--white);
+  font-weight: 700;
+  text-align: center;
+  border-radius: 0.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: .4s ease;
+}
+
+.submit-btn:hover {
+  background-image: linear-gradient(to right, var(--tomato), var(--orange));
+}
+
+.thanks {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem 1.5rem 1.5rem 1.5rem;
+}
+
+.thanks img {
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: 2rem;
+}
+
+.thanks p,
+.thanks h2 {
+  color: var(--charcoal-grey);
+}
+
+.thanks h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+}
+
+.thanks p {
+  margin-bottom: 16.5rem;
+  line-height: 1.5rem;
+}
+
+.thanks span {
+  font-weight: 700;
+}
+
+.thanks button {
+  border: none;
+  cursor: pointer;
+  background-color: var(--charcoal-grey);
+  color: var(--white);
+  padding: 1.35rem;
+  width: 100%;
+  border-radius: .5rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: .4s ease;
+}
+
+.thanks button:hover {
+  background-image: linear-gradient(to right, var(--tomato), var(--orange));
+}
+
+.error {
+  border: 1px solid var(--tomato);
+  color: var(--tomato);
+  background-color: hsl(4, 100%, 95%);
+}
+
+@media (min-width: 600px) {
+
+  .wrap {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 57rem;
+    align-items: center;
+    padding: 1.25rem 1.25rem 1.25rem 0;
+    border-radius: 2rem 1rem 1rem 2rem;
+  }
+
+  .container {
+    border-radius: 2rem 1rem 1rem 2rem;
+  }
+
+  form {
+    padding: 4rem;
+  }
+
+  .thanks {
+    max-width: 31rem;
+    padding: 3rem 3rem 4rem 3rem;
+  }
+
+  .thanks p {
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 400px) {
+  body {
+    height: 100%;
+    background-color: var(--white);
+  }
+}
+
