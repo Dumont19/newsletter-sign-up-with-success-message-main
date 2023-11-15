@@ -118,7 +118,7 @@ small {
   width: 100%;
   padding: 1rem;
   border: none;
-  background-color: var(--dark-slate-grey);
+  background: var(--dark-slate-grey);
   color: var(--white);
   font-weight: 700;
   text-align: center;
@@ -129,7 +129,7 @@ small {
 }
 
 .submit-btn:hover {
-  background-image: linear-gradient(to right, var(--tomato), var(--orange));
+  background: linear-gradient(to right, var(--tomato), var(--orange));
 }
 
 .thanks {
@@ -170,7 +170,7 @@ small {
 .thanks button {
   border: none;
   cursor: pointer;
-  background-color: var(--charcoal-grey);
+  background: var(--charcoal-grey);
   color: var(--white);
   padding: 1.35rem;
   width: 100%;
@@ -181,7 +181,7 @@ small {
 }
 
 .thanks button:hover {
-  background-image: linear-gradient(to right, var(--tomato), var(--orange));
+  background: linear-gradient(to right, var(--tomato), var(--orange));
 }
 
 .error {
