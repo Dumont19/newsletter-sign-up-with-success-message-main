@@ -130,6 +130,7 @@ small {
 
 .submit-btn:hover {
   background: linear-gradient(to right, var(--tomato), var(--orange));
+  box-shadow: 0 10px 10px hsl(5, 100%, 90%);
 }
 
 .thanks {
@@ -182,6 +183,7 @@ small {
 
 .thanks button:hover {
   background: linear-gradient(to right, var(--tomato), var(--orange));
+  box-shadow: 0 10px 10px hsl(5, 100%, 90%);
 }
 
 .error {
